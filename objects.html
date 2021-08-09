@@ -8,7 +8,12 @@
 </head>
 <body>
     <script>
-      let tv={Brand:"Sony",color:"Black",cost:45000,size:"medium"}//syntax to create objects
+      let tv={Brand:"Sony",color:"Black",cost:45000,size:"medium",
+      fullName: function(){
+          return this.Brand + "Led" + this.size;
+
+    }};//syntax to create objects
+      console.log(tv.fullName());
 
     </script>
 </body>
